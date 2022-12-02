@@ -19,6 +19,6 @@ int main()
         window.draw(shape);
         window.display();
     }
-    std::cout << "GITHUB THROUGH IDE WORKS \n";
+    std::cout << "GITHUB THROUGH IDE WORKS" << "\n";
     return 0;
 }

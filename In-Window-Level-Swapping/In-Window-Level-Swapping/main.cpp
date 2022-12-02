@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-
+#include <iostream>
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
@@ -19,6 +19,6 @@ int main()
         window.draw(shape);
         window.display();
     }
-
+    std::cout << "GITHUB THROUGH IDE WORKS \n";
     return 0;
 }

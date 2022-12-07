@@ -4,14 +4,13 @@
 
 class Level
 {
-private:
-	sf::CircleShape shape;
-
+	//Base level class
 public:
-	Level();
-	virtual ~Level();
+	Level() = default;
+	Level(Level const&) = default;
+	virtual ~Level() = default;
 
-	void Update();
-	void Render(sf::RenderTarget* target);
+	virtual void Update() = 0;
+	virtual void Render(sf::RenderTarget* target) = 0;
 };
 

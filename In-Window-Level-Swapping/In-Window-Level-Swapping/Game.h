@@ -1,5 +1,6 @@
 #pragma once
-#include "Level.h"
+#include "Level_a.h"
+#include "Level_b.h"
 
 class Game
 {
@@ -9,6 +10,7 @@ private:
 	sf::Event ev;
 
 	Level* level;
+	int levelNum;
 
 	void initWindow();
 	void initLevel();
@@ -16,6 +18,7 @@ private:
 public:
 	//Constructor and destructor
 	Game();
+	Game(const Game&) = default;
 	virtual ~Game();
 
 	//
@@ -24,6 +27,7 @@ public:
 	//Functions
 	void Run();
 
+	void UpdateLevel();
 	void UpdateEventPolls();
 	void Update();
 	void Render();
